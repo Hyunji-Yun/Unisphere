@@ -1,4 +1,4 @@
-# 4413project
+# EECS 4413 project
 
 # READ ME - HOW TO RUN
 
