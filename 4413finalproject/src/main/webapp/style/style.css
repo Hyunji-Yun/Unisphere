@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wishlist-icon {
+    display: none; /* Hide the icon by default */
+}
+
+header {
+    width: 100%;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.promo-banner {
+    background-color: #87ceeb;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.page-title {
+    grid-column: 1 / -1;
+    padding: 20px 0;
+    text-align: center; /* Center-align the title */
+}
+
+
+/* a tag links */
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+
+/* Ensure the form takes full width */
+.search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the search bar horizontally */
+    margin: 0; /* Remove default margins */
+}
+
+/* Style the search input */
+.search-bar {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width to keep it from stretching too wide */
+    padding: 10px; /* Add some padding inside the input */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.icons {
+    display: flex;
+    gap: 10px; /* Adjust spacing as needed */
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust width and height as needed */
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust icon size as needed */
+    text-decoration: none;
+    color: #333; /* Icon color */
+}
+
+.icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-button {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.nav-button:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-page {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.item-image {
+    width: 40%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #888;
+}
+
+.item-details {
+    width: 60%;
+}
+
+.item-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.item-details p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.rating {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.addToBag, .wishlistButton {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.addToBag {
+    background-color: #000;
+    color: #fff;
+}
+
+.wishlistButton {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.filter-box {
+    width: 25%;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.product-list {
+    width: 75%;
+    padding: 10px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* use this for SIGN IN, SIGN UP, OTHER FORMS */
+.form-container {
+    width: 300px; 
+    margin: 0 auto; /* Center the form */
+}
+
+.form-container label,
+.form-container input,
+.form-container button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; /* Add spacing between elements */
+}
+
+.form-container input {
+    padding: 10px;
+}
+
+.form-container button {
+    background-color: black; 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049; /* Change color on hover */
+}
+
+/* dropdowns */
+
+
+/* stuff with a blue nav panel and view section (catalogue, profile) */
+.container {
+   display: flex;
+   width: 80%;
+   margin: 50px auto;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   flex-direction: row;
+   gap: 20px; /* Space between the two sections */
+}
+
+.nav-panel {
+    width: 25%;
+     flex: 1;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for distinction */
+
+}
+
+.nav-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nav-panel form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.nav-panel select,
+.nav-panel input[type="range"],
+.nav-panel button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.nav-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-panel ul li {
+    margin: 15px 0;
+}
+
+.nav-panel ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-panel ul li a:hover {
+    color: #007bff;
+}
+
+.content-panel {
+    width: 75%;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for distinction */
+    
+}
+
+.content-panel h2 {
+    margin-top: 0;
+}
+
+/* specific to order details stuff */
+.order-list {
+    margin: 0;
+    padding: 0;
+}
+
+.order-list li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-list li:hover {
+    background-color: #e0e0e0;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.user-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.user-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.user-item p {
+    margin: 5px 0;
+}
+
+.user-item h3 a {
+    color: #333; /* Text color */
+    text-decoration: none; /* Removes underline */
+}
+
+.user-item h3 a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+
+
+
+

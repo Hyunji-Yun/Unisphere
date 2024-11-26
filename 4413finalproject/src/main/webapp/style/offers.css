@@ -1,0 +1,75 @@
+/* Offers Page Styles */
+.offers-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.offers-main h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.offers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px; /* Adjusts the max width to fit on the page */
+}
+
+.offer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 1px;
+}
+
+.offer-image {
+    flex: 1;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.offer-image img {
+    width: 100%;
+    height: max-content;
+    object-fit: cover; /* Ensures the image fully covers the box */
+    object-position: center; /* Centers the image */
+}
+
+.apply-btn {
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .offer-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .offer-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        height: 120px;
+    }
+}
